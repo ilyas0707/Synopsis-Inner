@@ -124,12 +124,12 @@
                                 <p>Los Angeles</p>
                             </div>
                             <div class="inner_item">
-                                <h4>Trip Name</h4>
-                                <p>Los Angeles</p>
+                                <h4>Trip Date</h4>
+                                <p>29.06.2021</p>
                             </div>
                             <div class="inner_item">
-                                <h4>Trip Name</h4>
-                                <p>Los Angeles</p>
+                                <h4>Travel Request №</h4>
+                                <p>WF1234321 <img src="./assets/icons/coupon.png" alt="coupon"></p>
                             </div>
                         </div>
                     </div>
@@ -166,13 +166,133 @@
                                 <select name="" id="">
                                     <option value=""></option>
                                 </select>
-                                <img src="./assets/icons/arrow_down.png" alt="arrow_down">
+                                <img style="transform: translateY(-3px) rotate(180deg);" src="./assets/icons/arrow_black.png" alt="arrow_black">
                             </div>
                             <div class="expense_input">
                                 <label for="merchant">Merchant</label>
                                 <input type="text" id="merchant">
                             </div>
                         </form>
+
+                        <h3 class="fuel_heading">
+                            Fuel Costs Details
+                            <button><img src="./assets/icons/arrow_black.png" alt="arrow_black"></button>
+                        </h3>
+
+                        <div class="expense_fuel">
+                            <form action="#" class="expense_form column">
+                                <div class="expense_input">
+                                    <label for="from">from</label>
+                                    <input type="text" id="from">
+                                    <img src="./assets/icons/car.png" alt="car">
+                                </div>
+                                <div class="expense_input">
+                                    <label for="to">to</label>
+                                    <input type="text" id="to">
+                                    <img src="./assets/icons/car.png" alt="car">
+                                </div>
+                                <div class="expense_input">
+                                    <label for="distance">Distance</label>
+                                    <input type="text" id="distance">
+                                </div>
+                                <div class="expense_input">
+                                    <label for="occurrences"># Occurrences</label>
+                                    <input type="text" id="occurrences">
+                                </div>
+                            </form>
+
+                            <img class="fuel_map" src="./assets/images/map.png" alt="map">
+                        </div>
+
+                        <form action="#" class="expense_form template">
+                            <div class="expense_input">
+                                <label for="amount">Amount</label>
+                                <input type="text" id="amount">
+                            </div>
+                            <div class="expense_input">
+                                <label for="currency">Currency</label>
+                                <select name="" id="currency">
+                                    <option value="USD">USD</option>
+                                </select>
+                                <img style="transform: translateY(-3px) rotate(180deg);" src="./assets/icons/arrow_black.png" alt="arrow_black">
+                            </div>
+                            <div class="expense_input">
+                                <label for="paidBy">Paid by</label>
+                                <select name="" id="paidBy">
+                                    <option value=""></option>
+                                </select>
+                                <img style="transform: translateY(-3px) rotate(180deg);" src="./assets/icons/arrow_black.png" alt="arrow_black">
+                            </div>
+                            <button>
+                                View Reciept
+                                <img src="./assets/icons/reciept.png" alt="reciept">
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="inner_expense1" style="margin-top: 20px;">
+                        <h3 class="expense_heading">
+                            <span>
+                                Expense 2 -
+                                <button><img src="./assets/icons/delete.png" alt="delete"></button>
+                            </span>
+                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
+                        </h3>
+
+                        <form action="#" class="expense_form">
+                            <div class="expense_input">
+                                <label for="expenseDate">DATE OF EXPENSE</label>
+                                <input type="date" id="expenseDate">
+                                <img src="./assets/icons/calendar.png" alt="calendar">
+                            </div>
+                            <div class="expense_input">
+                                <label for="">CATEGORY</label>
+                                <select name="" id="">
+                                    <option value=""></option>
+                                </select>
+                                <img style="transform: translateY(-3px) rotate(180deg);" src="./assets/icons/arrow_black.png" alt="arrow_black">
+                            </div>
+                            <div class="expense_input">
+                                <label for="merchant">Merchant</label>
+                                <input type="text" id="merchant">
+                            </div>
+                        </form>
+
+                        <form action="#" class="expense_form template">
+                            <div class="expense_input">
+                                <label for="amount">Amount</label>
+                                <input type="text" id="amount">
+                            </div>
+                            <div class="expense_input">
+                                <label for="currency">Currency</label>
+                                <select name="" id="currency">
+                                    <option value="USD">USD</option>
+                                </select>
+                                <img style="transform: translateY(-3px) rotate(180deg);" src="./assets/icons/arrow_black.png" alt="arrow_black">
+                            </div>
+                            <div class="expense_input">
+                                <label for="paidBy">Paid by</label>
+                                <select name="" id="paidBy">
+                                    <option value=""></option>
+                                </select>
+                                <img style="transform: translateY(-3px) rotate(180deg);" src="./assets/icons/arrow_black.png" alt="arrow_black">
+                            </div>
+                            <button>
+                                Upload Reciept
+                                <img src="./assets/icons/reciept.png" alt="reciept">
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="inner_add">
+                        <span></span>
+                        <button>+</button>
+                        <span></span>
+                    </div>
+
+                    <div class="inner_buttons">
+                        <button class="buttons_closed">MARK AS CLOSED</button>
+                        <button class="buttons_submit">SUBMIT</button>
                     </div>
                 </div>
             </div>
