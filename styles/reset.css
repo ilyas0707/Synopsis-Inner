@@ -38,17 +38,15 @@ button {
     cursor: pointer;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-}
-
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
+}
+
+input:required:invalid {
+    border: 1px solid red;
 }
 
 .container {
