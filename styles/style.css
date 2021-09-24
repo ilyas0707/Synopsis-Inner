@@ -91,11 +91,16 @@
 }
 
 .main_block {
-    padding: 63px 41px;
+    padding: 30px 41px 41px 41px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 5px 0px rgba(172, 158, 245, 0.23);
     margin-bottom: 20px;
+    transition: all .3s;
+}
+
+.main_block:hover {
+    box-shadow: 0px 0px 10px 5px rgba(172, 158, 245, 0.23);
 }
 
 .main_topline {
@@ -138,6 +143,11 @@
     border-radius: 30px;
     color: #fff;
     background: #4e2df1;
+    transition: all .3s;
+}
+
+.main_button:hover {
+    background: #4729db;
 }
 
 .main_search > input {
@@ -251,6 +261,11 @@
     border-radius: 20px;
     border: 1px solid #e4e4e4;
     margin-left: 15px;
+    transition: all .3s;
+}
+
+.main_amount > a:hover {
+    background: #e4e4e4;
 }
 
 .main_pagination {
@@ -285,8 +300,24 @@
     display: flex;
 }
 
+.scene_item.active {
+    width: 100%;
+}
+
 .scene_logo {
     padding: 34px 40px 80px 40px;
+}
+
+/* .scene_menu.active {
+    transform: translateX(50%);
+} */
+
+.scene_menu.active .closed {
+    display: none;
+}
+
+.scene_menu.active .scene_nav {
+    margin-top: 150px;
 }
 
 .scene_list > a {
@@ -304,6 +335,11 @@
 
 .scene_list > a > img {
     margin-right: 30px;
+}
+
+.scene_menu.active .scene_list > a > img {
+    margin-right: 0;
+    margin-left: 20px;
 }
 
 .scene_changed {
@@ -328,6 +364,15 @@
     margin-right: 30px;
 }
 
+.scene_menu.active .scene_changed > a {
+    display: block;
+    text-align: center;
+}
+
+.scene_menu.active .scene_changed > a > img {
+    margin-right: 0;
+}
+
 .scene_call {
     padding: 34px 0px 50px 40px;
 }
@@ -340,7 +385,7 @@
 
 .scene_contacts > h3 {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     color: #4e2df1;
     font-size: 16px;
     text-transform: uppercase;
@@ -349,7 +394,7 @@
 
 .scene_contacts > h3 > img {
     margin-right: 20px;
-    transform: translateY(7px);
+    /* transform: translateY(7px); */
 }
 
 .scene_number {
@@ -464,6 +509,11 @@ input:checked + .scene_slider:before {
     border-radius: 5px;
     box-shadow: 0px 0px 3px 0px rgba(172, 158, 245, 0.43);
     margin-bottom: 50px;
+    transition: all .3s;
+}
+
+.inner_info:hover {
+    box-shadow: 0px 0px 10px 5px rgba(172, 158, 245, 0.23);
 }
 
 .inner_info > h3 {
@@ -530,7 +580,13 @@ input:checked + .scene_slider:before {
     padding: 20px 30px;
     border: 1px solid #4e2df1; 
     border-radius: 50px;
-    color: #4e2df1;   
+    color: #4e2df1;
+    transition: all .3s;
+}
+
+.export_buttons > button:hover {
+    background: #4e2df1;
+    color: #fff;
 }
 
 .export_buttons > button:first-child {
@@ -545,6 +601,11 @@ input:checked + .scene_slider:before {
     padding: 30px 40px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px 0px rgba(172, 158, 245, 0.43);
+    transition: all .3s;
+}
+
+.inner_expense1:hover {
+    box-shadow: 0px 0px 10px 5px rgba(172, 158, 245, 0.23);
 }
 
 .expense_heading {
@@ -669,6 +730,11 @@ input:checked + .scene_slider:before {
     border-radius: 5px;
     box-shadow: 0px 0px 3px 0px rgba(172, 158, 245, 0.43);
     margin: 20px 0;
+    transition: all .3s;
+}
+
+.inner_add:hover {
+    box-shadow: 0px 0px 10px 5px rgba(172, 158, 245, 0.23);
 }
 
 .inner_add > span {
@@ -702,6 +768,12 @@ input:checked + .scene_slider:before {
     border: 1px solid #e92a30; 
     border-radius: 50px;
     color: #e92a30;
+    transition: all .3s;
+}
+
+.buttons_closed:hover {
+    background: #e92a30;
+    color: #fff;
 }
 
 .buttons_submit {
@@ -711,6 +783,11 @@ input:checked + .scene_slider:before {
     background: #4e2df1;
     border-radius: 50px;
     color: #fff;
+    transition: all .3s;
+}
+
+.buttons_submit:hover {
+    background: #4729db;
 }
 
 .trip_heading > h2 {
@@ -829,6 +906,11 @@ input:checked + .scene_slider:before {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s;
+}
+
+.img_button:hover {
+    background: #4729db;
 }
 
 .img_button > img {
@@ -840,6 +922,11 @@ input:checked + .scene_slider:before {
     border-radius: 5px;
     box-shadow: 0px 0px 3px 0px rgba(172, 158, 245, 0.43);
     margin-bottom: 20px;
+    transition: all .3s;
+}
+
+.trip_detail:hover {
+    box-shadow: 0px 0px 10px 5px rgba(172, 158, 245, 0.23);
 }
 
 .trip_detail > h2 {
@@ -892,6 +979,11 @@ input:checked + .scene_slider:before {
     border-radius: 5px;
     box-shadow: 0px 0px 3px 0px rgba(172, 158, 245, 0.43);
     margin-bottom: 20px;
+    transition: all .3s;
+}
+
+.trip_list:hover {
+    box-shadow: 0px 0px 10px 5px rgba(172, 158, 245, 0.23);
 }
 
 .trip_list > h2 {
@@ -931,6 +1023,11 @@ input:checked + .scene_slider:before {
     border-radius: 5px;
     box-shadow: 0px 0px 3px 0px rgba(172, 158, 245, 0.43);
     margin-bottom: 20px;
+    transition: all .3s;
+}
+
+.trip_flight:hover {
+    box-shadow: 0px 0px 10px 5px rgba(172, 158, 245, 0.23);
 }
 
 .trip_flight > h2 {
@@ -987,13 +1084,13 @@ input:checked + .scene_slider:before {
 .crit_weight {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .crit_weight > p {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
-    margin-bottom: 15px;
 }
 
 .crit_weight > p > span {
@@ -1017,9 +1114,10 @@ input:checked + .scene_slider:before {
 }
 
 .topline_price > p {
+    display: inline-block;
+    margin-top: 5px;
+    color: #a8a4bd;
     text-transform: uppercase;
-    font-size: 10px;
-    color: #8b86a8;
 }
 
 .flight_item {
@@ -1096,7 +1194,6 @@ input:checked + .scene_slider:before {
 
 .flight_stop {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
     padding-left: 125px;
@@ -1133,6 +1230,7 @@ input:checked + .scene_slider:before {
 .flight_warning {
     color: #e92a30;
     font-size: 10px;
+    margin-left: 240px;
 }
 
 .flight_item.bb {
@@ -1427,6 +1525,12 @@ input:checked + .scene_slider:before {
     border-radius: 40px;
     color: #4e2df1;
     margin-right: 25px;
+    transition: all .3s;
+}
+
+.buttons_rebook:hover {
+    background: #4e2df1;
+    color: #fff;
 }
 
 .buttons_cancel {
@@ -1436,4 +1540,40 @@ input:checked + .scene_slider:before {
     border: 1px solid #e92a30; 
     border-radius: 50px;
     color: #e92a30;
+    transition: all .3s;
+}
+
+.buttons_cancel:hover {
+    background: #e92a30;
+    color: #fff;
+}
+
+.checkbox {
+    display: inline-flex;
+    position: relative;
+}
+
+.checkbox > span {
+    color: #34495E;
+    padding: 0.5rem 0.25rem;
+}
+
+.checkbox > input {
+    height: 15px;
+    width: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #4729db;
+    border-radius: 50%;
+    outline: none;
+    transition-duration: 0.3s;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.checkbox > input:checked {
+    border: 1px solid #4729db;
+    background-color: #4729db;
 }
